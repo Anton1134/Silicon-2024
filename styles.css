@@ -235,3 +235,28 @@ header .container {
   }
 }
 
+#brands {
+  display: block;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.brand-box {
+  border: 1px solid var(--color-forms-border);
+  border-radius: 8px;
+  height: 100px;
+  width: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#brand-6 {
+  box-shadow: 0 0 4px var(--color-forms-border);
+  }

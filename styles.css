@@ -44,6 +44,7 @@ body {
 
 .container {
   width: 100%;
+  max-width: 1320px;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
@@ -140,6 +141,97 @@ header .container {
   gap: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
+
+.btn-download-app {
+  background-color: var(--color-heading-dark);
+  color: var(--color-white);
+  border-radius: 8px;
+  padding: 12px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.btn-download-app:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+#hero {
+  background: rgb(99,102,241);
+  background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
+  padding-bottom: 2rem;
+  overflow: hidden;
+
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: "headline images"
+                         "content images";
+  }
+
+  .headline {
+    grid-area: headline;
+    text-align: left;
+    margin-top: 5rem;
+    h1{
+      font-size: 56px;
+      font-weight: 800;
+    }
+  }
+
+  .content {
+    grid-area: content;
+    text-align: left;
+
+    p {
+      font-size: 18px;
+      margin-bottom: 3rem;
+      margin-top: -2rem;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      flex-direction: row;
+    }
+
+    .discover-more {
+      color: var(--color-heading-dark);
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 1rem;
+      margin-left: 2rem;
+      margin-top: 12rem;
+    }
+  }
+
+  .images {
+    position: relative;
+    grid-area: images;
+    display: none;
+    display: block;
+
+    .img-back {
+      position: absolute;
+      z-index: -2;
+      width: 60%;
+      height: 90%;
+      width: auto;
+      bottom: -150px;
+      right: 230px;
+    }
+    .img-front {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      height: 100%;
+      bottom: -100px;
+      width: auto;
+    }
+  }
+}
+

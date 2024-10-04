@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root, ::before, ::after {
+ --color-gray-100: #F3F6FF;
+ --color-secondary: #EFF2FC;
+ --color-devider-border: #E2E5F1;
+ --color-forms-border: #D4D7E5;
+ --color-input-placeholder: #B4B7C9;
+ --color-muted-text: #9397AD;
+ --color-body-text: #565973;
+ --color-navigation: #33354D;
+ --color-heading-dark: #0B0F19;
+
+ --color-primary: #6366F1; 
+ --color-gradient: #;
+
+ --color-error: #EF4444;
+ --color-success: #22C55E;
+ --color-warning: #FFBA08;
+ --color-info: #4C82F7;
+
+ --container-padding: 1rem;
+ --transition-time: all 0.2s;
+}
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body, section, div, footer, main, aside, blockquote, p, span {
+margin: 0;
+padding: 0;
+}

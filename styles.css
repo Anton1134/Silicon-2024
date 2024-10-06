@@ -441,3 +441,119 @@ ul {
     padding-left: 1rem;
   }
 }
+.faq {  
+  margin-top: 6rem;
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }  
+  p {
+    font-size: 18px;
+    color: var(--color-body-text);
+  }
+  .flex-container {
+    margin-top: 2rem;
+    display: flex;
+    width: 417px;
+    height: 380px;
+    h2 {
+      font-size: 32px;
+      font-weight: 800;
+    }
+    .blue-theme, .green-theme {
+      border: 1px solid var(--color-forms-border);
+    }
+    .blue-theme {
+      display: grid;
+      grid-template-rows: auto;
+      width: 196px;
+      height: 160px;
+      border-radius: 10px;
+      text-align: center;
+      img {
+        margin: 1.5rem;
+      }
+      span {
+        font-size: 14px;
+        color: var(--color-body-text);
+        text-align: left;
+        margin-left: 1rem;
+      }
+      p{
+        color: var(--color-primary);
+        margin: 1rem;
+        font-size: 14px;
+        text-align: left;
+        cursor: pointer;
+      }
+      i {
+        color: var(--color-primary);
+        margin: 1rem;
+        font-size: 14px;
+        
+      }
+    }
+    .green-theme {
+      display: grid;
+      grid-template-rows: auto;
+      width: 196px;
+      height: 160px;
+      margin-left: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      img {
+        margin: 1rem;
+      }
+      span {
+        font-size: 14px;
+        color: var(--color-body-text);
+        text-align: left;
+        margin-left: 1rem;
+      }
+      p{
+        color: var(--color-success);
+        margin: 1rem;
+        font-size: 14px;
+        text-align: left;
+        cursor: pointer;
+      }
+      i {
+        color: var(--color-success);
+        margin: 1rem;
+        font-size: 14px;
+        
+      }
+    }
+  }
+}
+.accordian { 
+  display: grid;
+  width: 670px;
+  margin-left: 7rem;
+.panel {
+  border: 1px solid var(--color-secondary);
+  margin: .2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 6px var(--color-secondary);
+  text-align: left;
+  padding: 1.5rem;
+  p {
+    margin-top: .8rem;
+    color: var(--color-body-text);
+    font-size: 14px;
+  }
+  span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  img {
+    position: absolute;
+    margin-top: -.6rem;
+    margin-left: 36rem;
+    cursor: pointer
+  }
+  .bluearrow {
+    margin-left: 35.4rem;
+  }
+}
+}

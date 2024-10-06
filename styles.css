@@ -246,8 +246,7 @@ header .container {
     align-items: center;
     gap: 24px;
   }
-}
-
+  
 .brand-box {
   border: 1px solid var(--color-forms-border);
   border-radius: 8px;
@@ -260,56 +259,91 @@ header .container {
 #brand-6 {
   box-shadow: 0 0 4px var(--color-forms-border);
   }
-  .container {
+}
+
+  .features {
+    .container {
     display: flex;
+    }
+    
+    .features-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .text {
+      margin-left: 10rem;
+      h2 {
+        text-align: left;
+        font-size: 40px;
+        font-weight: 800;
+      }
+      p {
+        font-size: 18px;
+        text-align: left;
+        color: var(--color-body-text)
+      }
+      h3 {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 800;
+      }
+    }
+    #padding-top-1 {
+      color: var(--color-muted-text);
+      margin-top: -1rem;
+      margin-bottom: 3rem;
+    }
+    .iphone {
+      position: flex;
+      margin-top: 2rem;
+    }
+    .feature-card {
+      display: flex;
+      text-align: start;
+      gap: 1rem;
+      align-items: flex-start;
+  
+    }
+    .icon-container {
+      background-color: var(--color-secondary);
+      margin-top: 1.5rem;
+      padding: 1rem;
+      flex-shrink: 0;
+      border-radius: 5px;
+    }
   }
-  .text {
-    margin-left: 10rem;
+
+  .carousel-section {
+    padding-block: 1rem;
+    background-color: var(--color-gray-100);
+    text-align: center;
+
+    .carousel {
+      display: flex;
+      justify-content: space-evenly;
+    }
     h2 {
-      text-align: left;
       font-size: 40px;
       font-weight: 800;
     }
-    p {
-      font-size: 18px;
-      text-align: left;
-      color: var(--color-body-text)
-    }
     h3 {
-      text-align: left;
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 800;
     }
+    p {
+      font-size: 16px;
+      color: var(--color-muted-text);
+    }
+    .text {
+      max-width: 630px;
+      margin-left: 25%;
+    }
+  .space {
+    gap: 3rem;
+    padding-block: 2rem;
   }
-  #padding-top-1 {
-    color: var(--color-muted-text);
-    margin-top: -1rem;
-    margin-bottom: 3rem;
-  }
-  .iphone {
-    position: flex;
-    margin-top: 2rem;
-  }
-  .feature-card {
-    display: flex;
-    text-align: start;
-    gap: 1rem;
-    align-items: flex-start;
 
   }
-  .icon-container {
-    background-color: var(--color-secondary);
-    margin-top: 1.5rem;
-    padding: 1rem;
-    flex-shrink: 0;
-    border-radius: 5px;
-  }
-  .features {
-    display: flex;
-    text-align: center;
-  }
-  .features-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+

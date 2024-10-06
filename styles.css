@@ -16,13 +16,9 @@
  --color-success: #22C55E;
  --color-warning: #FFBA08;
  --color-info: #4C82F7;
-
- --container-padding: 1rem;
- --transition-time: all 0.2s;
 }
 * {
   box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body, section, div, footer, main, aside, blockquote, p, span {
 margin: 0;
@@ -30,23 +26,16 @@ padding: 0;
 }
 body {
   font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
 }
-
 .wrapper {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   height: 100vh;
+  width: 100%;
 }
 
 .container {
-  width: 100%;
-  max-width: 1320px;
   padding-left: 1rem;
   padding-right: 1rem;
+  max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -120,64 +109,53 @@ body {
   border-radius: 50%;
 }
 
-.nav-link {
+.nav-features {
   color: var(--color-heading-dark);
   font-weight: 600;
   text-decoration: none;
 }
-.nav-link:hover {
-  color: var(--color-primary);
+.nav-features:hover, .nav-features:active {
   text-decoration: underline;
-}
-.active {
   color: var(--color-primary);
-  text-decoration: underline;
 }
-#logo {
+#silicon-logo {
   margin-top: .25rem;
 }
 header .container {
-  display: grid;
   align-items: center;
+  display: grid;
   grid-template-columns: auto 1fr auto auto;
-  grid-template-areas: "logo sw mobile";
-  gap: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-block: 1rem;
+  gap: 2rem;
 }
 
 .btn-download-app {
   background-color: var(--color-heading-dark);
-  color: var(--color-white);
-  border-radius: 8px;
-  padding: 12px 25px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 11px 21px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-decoration: none;
 }
 .btn-download-app:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  text-decoration: none;
+  color: #fff;
+  background-color: var(--color-navigation);
 }
 
 #hero {
   background: rgb(99,102,241);
   background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
-  padding-bottom: 2rem;
   overflow: hidden;
-
+  padding-bottom: 1.9rem;
   .container {
     display: grid;
     grid-template-columns: 7fr 9fr;
-    grid-template-areas: "headline images"
-                         "content images";
+    grid-template-areas: "manage Iphones"
+                          "content Iphones";
   }
 
-  .headline {
-    grid-area: headline;
-    text-align: left;
+  .manage {
+    grid-area: manage;
     margin-top: 5rem;
     h1{
       font-size: 56px;
@@ -185,20 +163,17 @@ header .container {
     }
   }
 
-  .content {
+  .iphones {
     grid-area: content;
-    text-align: left;
     p {
       font-size: 18px;
       margin-bottom: 3rem;
       margin-top: -2rem;
       color: var(--color-body-text);
     }
-    .buttons {
+    .mobile-buttons {
       display: flex;
-      flex-direction: column;
       gap: 1.6rem;
-      flex-direction: row;
     }
     .btn-circle {
       margin-top: 1rem;
@@ -207,9 +182,7 @@ header .container {
       color: var(--color-heading-dark);
       display: flex;
       align-items: center;
-      justify-content: left;
       gap: .5rem;
-      list-style: none;
       margin-top: 10rem;
       text-decoration: none;
     }
@@ -217,9 +190,7 @@ header .container {
 
   .images {
     position: relative;
-    grid-area: images;
-    display: none;
-    display: block;
+    grid-area: Iphones;
 
     .img-back {
       position: absolute;

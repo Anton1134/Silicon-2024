@@ -211,7 +211,7 @@ header .container {
   }
 }
 
-#brands {
+#sponsor {
   display: block;
   padding-top: 6rem;
   padding-bottom: 2rem;
@@ -223,7 +223,7 @@ header .container {
     gap: 24px;
   }
   
-.brand-box {
+.sponsor-box {
   border: 1px solid var(--color-forms-border);
   border-radius: 8px;
   height: 100px;
@@ -248,6 +248,7 @@ header .container {
       grid-template-columns: repeat(2, 1fr);
     }
     .text {
+      margin-block: 5rem;
       margin-left: 10rem;
       h2 {
         text-align: left;
@@ -271,9 +272,9 @@ header .container {
       margin-bottom: 3rem;
       font-size: 18px;
     }
-    .iphone {
+    .phone {
+      margin-block: 5rem;
       position: flex;
-      margin-top: 2rem;
     }
     .feature-card {
       display: flex;
@@ -286,19 +287,18 @@ header .container {
       background-color: var(--color-secondary);
       margin-top: 1.5rem;
       padding: 1rem;
-      flex-shrink: 0;
-      border-radius: 5px;
+      border-radius: 7px;
       width: 60px;
       height: 60px;
     }
   }
 
-  .carousel-section {
-    padding-block: 1rem;
+  .carousel {
+    padding-block: 1.5rem;
     background-color: var(--color-gray-100);
     text-align: center;
 
-    .carousel {
+    .phones {
       display: flex;
       justify-content: space-evenly;
     }
@@ -313,14 +313,17 @@ header .container {
     p {
       font-size: 16px;
       color: var(--color-muted-text);
+      margin-bottom: 2rem;
     }
     .text {
       max-width: 630px;
       margin-left: 25%;
     }
   .space {
-    gap: 3rem;
-    padding-block: 2rem;
+    padding-block: 3rem;
+    h2 {
+      margin-top : 1rem;
+    }
   }
 
   }
@@ -338,6 +341,7 @@ ul {
 }
 
 .grid2-2 {
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: auto auto;
   

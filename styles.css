@@ -167,7 +167,7 @@ header .container {
 
   .container {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 7fr 9fr;
     grid-template-areas: "headline images"
                          "content images";
   }
@@ -185,27 +185,30 @@ header .container {
   .content {
     grid-area: content;
     text-align: left;
-
     p {
       font-size: 18px;
       margin-bottom: 3rem;
       margin-top: -2rem;
+      color: var(--color-body-text);
     }
     .buttons {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1.6rem;
       flex-direction: row;
     }
-
+    .btn-circle {
+      margin-top: 1rem;
+    }
     .discover-more {
       color: var(--color-heading-dark);
       display: flex;
       align-items: center;
       justify-content: left;
-      gap: 1rem;
-      margin-left: 2rem;
-      margin-top: 12rem;
+      gap: .5rem;
+      list-style: none;
+      margin-top: 10rem;
+      text-decoration: none;
     }
   }
 
@@ -218,18 +221,17 @@ header .container {
     .img-back {
       position: absolute;
       z-index: -2;
-      width: 60%;
-      height: 90%;
-      width: auto;
-      bottom: -150px;
-      right: 230px;
+      width: 55%;
+      height: 80%;
+      bottom: -40px;
+      right: 260px;
     }
     .img-front {
       position: absolute;
       z-index: -1;
-      right: 0;
-      height: 100%;
-      bottom: -100px;
+      right: 0px;
+      height: 95%;
+      bottom: -30px;
       width: auto;
     }
   }
@@ -279,7 +281,7 @@ header .container {
         font-weight: 800;
       }
       p {
-        font-size: 18px;
+        font-size: 16px;
         text-align: left;
         color: var(--color-body-text)
       }
@@ -291,8 +293,9 @@ header .container {
     }
     #padding-top-1 {
       color: var(--color-muted-text);
-      margin-top: -1rem;
+      margin-top: -1.3rem;
       margin-bottom: 3rem;
+      font-size: 18px;
     }
     .iphone {
       position: flex;
@@ -395,6 +398,9 @@ ul {
     display: flex;
     gap: 40px;
     padding-bottom: 1rem;
+    p {
+      color: var(--color-body-text);
+    }
   }
 }
 .rating-container {
@@ -430,6 +436,7 @@ ul {
   }
   .avatar {
     margin-left: 1rem;
+    margin-top: .5rem;
   }
   .quotes {
     position: absolute;
@@ -548,11 +555,12 @@ ul {
   }
   img {
     position: absolute;
-    margin-top: -.6rem;
+    margin-top: -.4rem;
     margin-left: 36rem;
     cursor: pointer
   }
   .bluearrow {
+    margin-top: -.7rem;
     margin-left: 35.4rem;
   }
 }
@@ -561,6 +569,7 @@ ul {
 
 
 .subscribe {
+  margin-top: 5rem;
  place-items: center;
  .container {
   display: flex;
@@ -589,7 +598,7 @@ img {
 
 .btns {
   margin-top: 0.5rem;
-  background-color: #6366F1;
+  background-color: var(--color-primary);
   color: #fff;
   padding: .5em 1em;
   border: 0;
@@ -610,6 +619,7 @@ position: relative
 .subscribe-form {
 margin-top: 0.5rem;
 padding-left: 2rem;
+padding-inline: 2.3rem;
 background-image: url('Images/envelope.svg');
 background-repeat: no-repeat;
 background-position: 10px 50%;
@@ -621,4 +631,11 @@ font-size: 12px;
 width: 300px;
 height: 50px;
 }
+}
+.copy {
+  padding: 2.5rem;
+  text-align: center;
+  color: var(--color-muted-text);
+  font-size: 14px;
+
 }

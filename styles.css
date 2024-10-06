@@ -260,3 +260,56 @@ header .container {
 #brand-6 {
   box-shadow: 0 0 4px var(--color-forms-border);
   }
+  .container {
+    display: flex;
+  }
+  .text {
+    margin-left: 10rem;
+    h2 {
+      text-align: left;
+      font-size: 40px;
+      font-weight: 800;
+    }
+    p {
+      font-size: 18px;
+      text-align: left;
+      color: var(--color-body-text)
+    }
+    h3 {
+      text-align: left;
+      font-size: 20px;
+      font-weight: 800;
+    }
+  }
+  #padding-top-1 {
+    color: var(--color-muted-text);
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+  }
+  .iphone {
+    position: flex;
+    margin-top: 2rem;
+  }
+  .feature-card {
+    display: flex;
+    text-align: start;
+    gap: 1rem;
+    align-items: flex-start;
+
+  }
+  .icon-container {
+    background-color: var(--color-secondary);
+    margin-top: 1.5rem;
+    padding: 1rem;
+    flex-shrink: 0;
+    border-radius: 5px;
+  }
+  .features {
+    display: flex;
+    text-align: center;
+  }
+  .features-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
